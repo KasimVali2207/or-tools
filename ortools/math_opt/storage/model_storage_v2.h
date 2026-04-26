@@ -1123,12 +1123,14 @@ template <typename IdType>
 std::vector<IdType> ModelStorageV2::ConstraintsWithVariable(
     const VariableId) const {
   LOG(FATAL) << "not implementable for ModelStorageV2";
+  return {};
 }
 
 template <typename IdType>
 std::vector<VariableId> ModelStorageV2::VariablesInConstraint(
     const IdType) const {
   LOG(FATAL) << "not implementable for ModelStorageV2";
+  return {};
 }
 
 }  // namespace operations_research::math_opt
